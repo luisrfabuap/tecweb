@@ -33,5 +33,19 @@
 
        <h2>Inciso 2</h2>
        <p>Proporcionar los valores de $a, $b, $c como sigue:</p>
+
+       <?php
+       $a = "ManejadorSQL";
+       $b = 'MySQL';
+       $c = &$a;
+
+
+       echo $a;
+       echo '<br>' ;
+       echo $b; 
+       echo '<br>' ;
+       echo $c;
+
+       ?>
 </body>
 </html>
