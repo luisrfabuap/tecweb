@@ -146,16 +146,6 @@
             $a .="Contenido de ejemplo";
             test2();
             echo '<br>';
-
-        echo '5) ';
-        function test3() {
-            $b *= $c;
-            echo '$b en el ámbito global: ' . $GLOBALS['b'] . "<br>";
-            echo '$b en el ámbito actual: ' . $b . "<br>";
-            }
-            $b *="Contenido de ejemplo";
-            test3();
-            echo '<br>';
         ?>
 
         <h2>Inciso 5</h2>
@@ -166,8 +156,57 @@
         $b = (integer) $a;
         $a = "9E3";
         $c = (double) $a;
+        ?>
+        
+        <h2>Inciso 6</h2>
+        <p>Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas
+        usando la función var_dump(<datos>).</p>
+        <p>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
+        en uno que se pueda mostrar con un echo:</p>
 
+        <?php
+        $a = "0";
+        $b = "TRUE";
+        $c = FALSE;
+        $d = ($a OR $b);
+        $e = ($a AND $c);
+        $f = ($a XOR $b);
 
-       ?>     
+        var_dump ($a, $b, $c, $d, $e, $f);
+        
+
+        echo '<br><br>';
+        if (!isset($c))
+        echo "La variable \$c se ha inicializado y contiene $c.";
+        else
+        echo "La variable \$c no se ha inicializado o definido.";
+
+        echo '<br><br>';
+        if (!isset($e))
+        echo "La variable \$e se ha inicializado y contiene $e.";
+        else
+        echo "La variable \$e no se ha inicializado o definido.";
+        ?>
+
+        <h2>Inciso 7</h2>
+        <p>Usando la variable predefinida $_SERVER, determina lo siguiente:</p>
+        <p>a. La versión de Apache y PHP, <BR>
+            b.  El nombre del sistema operativo (servidor), <BR>
+            c. El idioma del navegador (cliente).</p>
+
+        <?php
+        echo "1.- Version de Apache y PHP: ";
+        echo $_SERVER["SERVER_SOFTWARE"];
+        echo '<br>';
+
+        echo "2.- El nombre del sistema operativo (servidor): ";
+        echo $_SERVER["SERVER_NAME"];
+        echo '<br>';
+
+        echo "3.-  El idioma del navegador (cliente): ";
+        echo $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+        echo '<br>';
+
+        ?>
 </body>
 </html>
