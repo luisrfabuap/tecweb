@@ -45,7 +45,58 @@
        echo $b; 
        echo '<br>' ;
        echo $c;
+       echo '<br>';
 
+       
+       $a = "PHP server";
+       $b = &$a;
+       echo '<br> CAMBIO DE CONTENIDO DE LAS VARIABLES $a & $b ';
+       echo '<br><br>';
+       echo $a;
+       echo '<br>' ;
+       echo $b; 
        ?>
+
+
+        <H2>Inciso 3</H2>
+        <p>Muestra el contenido de cada variable inmediatamente después de cada asignación,
+        verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+        arreglo):</p>
+       <?php
+
+        echo '1) ';
+        $a = "PHP5 <br>";
+        echo $a;
+
+        echo '2) ';
+        $z = array();
+        $z [] = &$a;
+        echo $z [0]; //'Es un arreglo'
+        
+
+        echo '3) ';
+        $b = "5a version de PHP";
+        echo $b;
+        echo '<br>';
+
+        echo '4) ';
+        $c = $b*10;
+        echo $c;
+        echo '<br>';
+
+        echo '5) ';
+        $a .= $b;
+        echo $a; 
+        echo '<br>';
+
+        echo '6) ';
+        $b *= $c;
+        echo $b;
+        echo '<br>';
+
+        echo '7) ';
+        $z[0] = "MySQL";
+        echo $z [0];
+        ?>
 </body>
 </html>
