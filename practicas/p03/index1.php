@@ -16,6 +16,22 @@
 
         //myvar = 3.141516;
         echo 'myvar es incorrecta <br>';
+
+        $myvar = "Hola";
+        echo '$myvar es correcta <br>';
+
+        $var7 = "Hola 2";
+        echo '$var7 es correcta <br>';
+
+        $_element1 = "Hola 3";
+        echo '$_element1 es correcta <br>';
+
+        //$house*5 = "Error";
+        echo '$house*5 no es correcta, esto se debe a que no se puede utilizar un signo dentro de una variable';
+
     ?>
+
+       <h2>Inciso 2</h2>
+       <p>Proporcionar los valores de $a, $b, $c como sigue:</p>
 </body>
 </html>
