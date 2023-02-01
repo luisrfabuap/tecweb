@@ -98,5 +98,55 @@
         $z[0] = "MySQL";
         echo $z [0];
         ?>
+
+        <h2>Inciso 4</h2>
+        <p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+        la matriz $GLOBALS o del modificador global de PHP.</p>
+
+        <?php
+        $a = "PHP5 <br>";
+        
+
+        echo '1) ';
+        function test() {
+            $a = "PHP5";
+            echo '$a en el ámbito global: ' . $GLOBALS['a'] . "<br>";
+            echo '$a en el ámbito actual: ' . $a . "<br>";
+            }
+            $a = "PHP5 2";
+            test();
+        echo '<br>';
+
+        echo '2) ';
+        function arreglo() {
+            $z [] = &$a;
+            echo '$z en el ámbito global: ' . $GLOBALS['z'] . "<br>";
+            echo '$z en el ámbito actual: ' . $z . "<br>";
+            }
+            $z [0] = "MySQL";
+            arreglo();
+        echo '<br>';
+        
+        echo '3) ';
+        function test1() {
+            $b = "5a version de PHP";
+            echo '$b en el ámbito global: ' . $GLOBALS['b'] . "<br>";
+            echo '$b en el ámbito actual: ' . $b . "<br>";
+            }
+            $b = "5a version de PHP 1";
+            test1();
+            echo '<br>';
+        
+        echo '4) ';
+        function test2() {
+            $a .= $b;
+            echo '$a en el ámbito global: ' . $GLOBALS['a'] . "<br>";
+            echo '$a en el ámbito actual: ' . $a . "<br>";
+            }
+            $a .="Contenido de ejemplo";
+            test2();
+            echo '<br>';
+        
+        ?>
 </body>
 </html>
