@@ -146,7 +146,28 @@
             $a .="Contenido de ejemplo";
             test2();
             echo '<br>';
-        
+
+        echo '5) ';
+        function test3() {
+            $b *= $c;
+            echo '$b en el ámbito global: ' . $GLOBALS['b'] . "<br>";
+            echo '$b en el ámbito actual: ' . $b . "<br>";
+            }
+            $b *="Contenido de ejemplo";
+            test3();
+            echo '<br>';
         ?>
+
+        <h2>Inciso 5</h2>
+        <p>Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+        
+        <?php
+        $a = "7 personas";
+        $b = (integer) $a;
+        $a = "9E3";
+        $c = (double) $a;
+
+
+       ?>     
 </body>
 </html>
