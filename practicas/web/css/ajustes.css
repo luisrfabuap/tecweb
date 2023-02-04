@@ -10,7 +10,8 @@
   
 
   main {
-    display: block;
+    display: grid;
+
   }
 
   
