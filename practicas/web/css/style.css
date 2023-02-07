@@ -1,0 +1,271 @@
+html{
+    box-sizing: flex;
+    font-size: 60.5%;
+     background-color: #f5f6fa;
+}
+
+----------------------------------------
+
+----------------------------------------
+
+
+.img-fondo{
+background-image: ;
+
+}
+img{
+    width: 100%;
+}
+
+.imgghost{
+    width: 250%;
+    image-rendering: flex;
+    max-width: 150rem;
+}
+
+   
+.contenedor{
+    max-width: 135rem;
+    margin: 0 auto;
+}
+
+
+------------------------------------
+* {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+nav {
+  float: center; /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #FF004F;
+}
+.contenido {
+  padding-top: 80px;
+}
+------------------------------------
+
+
+.activa{
+    color:white;
+}
+
+.nuestros-productos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+   display: inline-grid;
+   grid-template-columns: repeat(3,1fr);
+
+   
+}
+.producto{
+    
+    background-color: rgba(40, 43, 43, 0.9);
+    margin: 2rem;
+    padding: 2rem;
+}
+.producto:hover{
+    background-color: #0a3d62;
+}
+
+.producto-blanco{
+    display: flex;
+    align-items: center;
+    border-radius: 0.7rem;
+    background-color: white;
+    height: 40rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.producto-precio,
+.producto-nombre{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.producto-precio{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.producto-nombre{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/*
+
+.formulario{
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+}*/
+
+
+.campo{
+    margin: 2rem;
+}
+
+
+.campo label{
+    display: block;
+}
+
+input, textarea{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+input::placeholder, textarea::placeholder{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+legend{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+label{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: .7rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton{
+    background-color:rgba(255, 55, 55, 0.768);
+    margin-top: 3rem;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nosotros{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10rem;
+margin-bottom: 20rem;
+
+}
+.nosotros-texto{
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.nosotros-texto1{
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.nosotros-img{
+    background-color: white;
+    border-radius: 5%;
+}
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20rem;
+}
+
+.bloques img{
+    width: 50rem;
+    margin-bottom: 2rem;
+    height: 35rem;
+}
+.bloque-titulo{
+    margin:0;
+}
+
+.bloque{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5rem;
+}
+.bloque-titulo{
+    color: black;
+    font-size: 4rem;
+    margin: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.enlace-footer:hover{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
